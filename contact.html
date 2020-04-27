@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ernest's Contact Details</title>
+</head>
+
+<body>
+  <h1>Ernest's Contact Details</h1>
+  <p>Ernest can often be found in his bed. To disclose the location of his bed would be reprehensible, but suffice it to say it is not in <a href="https://weareernest.com/">Ernest's kitchen</a>.</p>
+
+  <hr>
+
+  <h3>Contact Form</h3>
+  <form class="" action="mailto:null@null.com" method="post">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <label for="name">Your Name:</label>
+          </td>
+          <td>
+            <input type="text" id="name" name="name" autofocus>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Your Email Address:</label>
+          </td>
+          <td>
+            <input type="email" id="email" name="email" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tel">Contact Telephone Number:</label>
+          </td>
+          <td>
+            <input type="tel" id="tel" name="tel"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="subject">Subject:</label>
+          </td>
+          <td>
+            <input type="text" id="subject" name="subject">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dateofbirth">Date of Birth:</label>
+          </td>
+          <td>
+            <input type="date" id="dateofbirth" name="dateofbirth"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="favouritecolour">Favourite Colour:</label>
+          </td>
+          <td>
+            <input type="color" id="favouritecolour" name="favouritecolour"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="files">File(s) to send with message:</label>
+          </td>
+          <td>
+            <input type="file" id="files" name="files" multiple> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="selfie">Selfie photo:</label>
+          </td>
+          <td>
+            <input type="file" id="selfie" name="selfie" accept="image/*" capture="user"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="favnum">Favourite Number:</label>
+          </td>
+          <td>
+            <input type="number" id="favnum" name="favnum"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="favwebsite">Favourite Website:</label>
+          </td>
+          <td>
+            <input type="url" id="favwebsite" name="favwebsite"> (optional)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="confidence">Self Confidence:</label>
+          </td>
+          <td>
+            <input type="range" id="confidence" name="confidence" list="confidence-tickmarks" min="0" max="100">
+          </td>
+          <!-- The labels and tickmarks are not rendered by some browsers, including Firefox! -->
+          <!-- Ticks will render in Chrome, but it is only possible to get the labels by using CSS to change the display attribute -->
+          <datalist id="confidence-tickmarks">
+            <option value="0" label="0%">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50" label="50%">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100" label="100%">
+          </datalist>
+        </tr>
+        <tr>
+          <td>
+            Favourite Herb:
+          </td>
+          <td>
+            <input type="radio" id="herb-parsley" name="herb">
+            <label for="herb-parsley">Parsley</label>
+            <br>
+            <input type="radio" id="herb-thyme" name="herb">
+            <label for="herb-thyme">Thyme</label>
+            <br>
+            <input type="radio" id="herb-rosemary" name="herb">
+            <label for="herb-rosemary">Rosemary</label>
+            <br>
+            <input type="radio" id="herb-other" name="herb">
+            <label for="herb-other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="favplant">Favourite Plant:</label>
+          </td>
+          <td>
+            <input type="text" id="favplant" name="favplant" list="plants">
+            <datalist id="plants">
+              <option value="Spider Plant">
+              <option value="Parsley">
+              <option value="Rosemary">
+              <option value="Dragon Plant">
+              <option value="Banana Tree">
+              <option value="Other">
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="message">Message:</label>
+          </td>
+          <td>
+            <textarea id="message" name="message" rows="8" cols="80"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="joinspacemission" name="joinspacemission" value="nutter" checked>
+            <label for="joinspacemission">Would you like to join one of Ernest's upcoming space missions?</label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <input type="submit" value="Submit your message"><input type="reset" value="Clear form">
+    <br>
+
+  </form>
+
+  <hr>
+  <p id="Navigator">
+    <a href="index.html">Home</a> | <a href="hobbies.html">Hobbies</a> | <a href="contact.html">Contact Details</a>
+  </p>
+</body>
+
+</html>
